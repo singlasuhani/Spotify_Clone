@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.SongsTable {background-color: transparent;}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.Dashboard{
+    position: fixed;
+    height: 100vh;
+    width: 390px !important;
+    /* border: 1px solod red; */
+    /* background-color: white; */
+}
+.Dashboard .Sec1{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    border-radius: 3%;
+    height: 200px;
+    width: 95%;
+    margin: 10px;
+    /* border: 1px solid red; */
+    background-color: #121212;
+}
+.spotifyLogo{
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    background-color: transparent;
+}
+.Sec1 .Sec1_Inner_Content1{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: transparent;
+}
+.Logo{
+    background-color: transparent;
+    width: 35px;
+}
+.Sec1 .Sec1_Inner_Content1 kbd{
+    color: white;
+    position: relative;
+    top: -15px;
+    left: 20px;
+    font-size: 18px;
+    background-color: transparent;
+}
+.Sec1 .Sec1_Inner_Content2{
+    width: 50px !important;
+    margin-top: 10px;
+    margin-left: 40px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: transparent;
+}
+.SearchItem{
+    cursor: pointer;
+    color: #b3b3b3;
+    position: relative;
+    top: -30px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+}
+.Sec1 .Sec1_Inner_Content1 kbd:hover{
+    color: white;
+    text-decoration: underline;
+}
+.Sec1 .Sec1_Inner_Content2 .SearchItem:hover{
+    color: white;
+    text-decoration: underline;
+}
+.Dashboard .Sec2{
+    position: relative;
+    top: 10px;
+    border-radius: 3%;
+    height: 170px;
+    width: 95%;
+    margin: 10px;
+    /* border: 1px solid red; */
+    background-color: #121212;
+}
+.Dashboard .Sec2 a{
+    background-color: transparent;
+    color: #b3b3b3 !important;
+    font-weight: lighter;
+    position: relative;
+    top: 10px;     
+    left: 20px;
+}
+.Dashboard .Sec2 .cookies:hover{
+    text-decoration: underline;
+}
+.FooterElem{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+}
+.FooterElem a{
+    color: white;
+    position: relative;
+    top: 10px;
+    /* font-size: 10px; */
+    margin-left: 20px;
+}
+.SignupFooter{
+    position: relative;
+    left: 700px;
+    font-size: 17px;
+    width: 160px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    padding: 16px;
+}
+.Singers{
+    position: fixed;
+    right: 0;
+    /* background-color: red; */
+    width: 75%;
+    height: 86vh;
+    border-radius: 15px;
+    margin: 10px 0px 10px 0px;
+}
+.Navbar{
+    position: fixed;
+    background-color: #131313;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 74%;
+    height: 80px;
+    margin: 8px;
+}
+.Arrow{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    background-color: #131313;
+}
+.ArrowBtn{
+    padding: auto;
+    cursor: pointer;
+    font-size: 2vw;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: black;
+    border-radius: 50%;
+}
+.ArrowBtn svg{
+    background-color: transparent;
+}
+.Signup{
+    cursor: pointer;
+    position: absolute;
+    font-size: 18px;
+    top: 30px;
+    right: 150px;
+    background-color: transparent;
+    border: none;
+    color: #f1f1f1;
+}
+.login{
+    border-radius: 30px;
+    width: 100px;
+    padding: 12px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+}
+.SingerElem{
+    position: fixed;
+    top: 90px;
+    background-color: #131313;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 74%;
+    height: 73vh;
+    margin: 8px;
+}
+.AllSingers{
+    position: fixed;
+    top: 90px;
+    background-color: #131313;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 74%;
+    /* border: 1px solid red; */
+    height: 73vh;
+}
+.elem{
+    font-size: 25px;
+    color: #f1f1f1;
+    background-color: transparent;
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+.elem:hover{
+    text-decoration: underline;
+}
+.SingerList{
+    position: relative;
+    width: auto;
+    height: 35vh;
+    top: 40px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.Singeritem p{
+    cursor: pointer;
+    margin-left: 25px;
+    line-height: 1.5;
+    color: #f1f1f1;
+    font-size: 15px;
+    background-color: transparent;
+}
+.Singeritem{
+    background-color: transparent;
+}
+.LoginPage{
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    color: white;
+    background-color: #131313;
+    border-radius: 15px;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 50vh;
+}
+.LoginPage label{
+    color: white;
+    background-color: transparent;
+}
+.LoginPage input{
+    width: 350px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+}
+.LoginPage input[type=submit]{
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #1ed760;
+    width: 200px;
+}
+    
+.LoginPage p{
+    background-color: transparent;
+}
+.LoginPage a{
+    text-decoration: none;
+    color: white;
+
+}
+.LoginPage a:hover{
+    text-decoration: underline;
+}
+.SignUpPage{
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    color: white;
+    background-color: #131313;
+    border-radius: 15px;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 95vh;
+}
+.SignUpPage label{
+    color: white;
+    background-color: transparent;
+}
+.SignUpPage input{
+    width: 350px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+}
+.SignUpPage input[type=submit]{
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #1ed760;
+    width: 200px;
+}
+    
+.SignUpPage p{
+    background-color: transparent;
+}
+.SignUpPage a{
+    text-decoration: none;
+    color: white;
+
+}
+.SignUpPage a:hover{
+    text-decoration: underline;
+}
+.SongController{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+.SongController .slider{
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: -200px;
+    top: 55px;
+}
+.myProgressBar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: rgb(121, 110, 110);
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  /* Modify the appearance of the slider thumb */
+.myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+ 
+  /* Change the opacity when mouse is hovered */
+  .myProgressBar:hover{
+    opacity: 1.0;
+  }
+   
+  .myProgressBar {
+    width: 35%;
+    height: 6px;
+    border-radius: 10px;
+  }
+  .SongController .icons{
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 460px;
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 35px;
+  }
+  .SongController .icons i{
+    color: white;
+  }
+  .SongController .SongNameDisplay{
+    width: 200px !important;
+    background-color: transparent;
+    height: 30px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 3px;
+    text-align: center;
+    left: 100px;
+    color: white;
+  }
+.MySongs{
+    overflow-y: scroll;
+    position: fixed;
+    top: 90px;
+    background-color: #131313;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 74%;
+    height: 70vh;
+    margin: 8px;
+    /* border: 1px solid red; */
+}
+.MySongs .SongsTable{
+    position: relative;
+    background-color: transparent !important;
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid red; */
+    color: white;
+    text-align: center;
+}
+.MySongs .SongsTable table,td,th,tr{
+    background-color: transparent;
+}
+.HeadImg{
+    background-image: url("images/bieberjustice.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    background-color: transparent;
+    width: 100%;
+    height:400px;
+    /* opacity: 0.5; */
+}
+.verified{
+    top: 100px;
+    position: relative;
+    left: 700px;
+    line-height: 2;
+    color: white;
+}
+.HeadImg1{
+    background-image: url("images/taylor.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    background-color: transparent;
+    width: 100%;
+    height:400px;
+    /* opacity: 0.5; */
+}
+.HeadImg2{
+    background-image: url("images/zayn.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    background-color: transparent;
+    width: 100%;
+    height:400px;
+    /* opacity: 0.5; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.Cookies{
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    color: white;
+    background-color: #131313;
+    border-radius: 15px;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 95vh;
+
+}
+.cookiesContent{
+    line-height: 1.8;
+    padding: 20px;
+    text-align: justify;
+}
+.cookiesContent h2{
+    text-align: left;
+}
+.Feedback{
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    color: white;
+    background-color: #131313;
+    border-radius: 15px;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 95vh;
+}
+.Feedback input{
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.Feedback textarea{
+    padding: 10px;
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+
+}
+.Feedback input[type=submit]{
+    padding: 20px;
+    width: 100px;
+}
+.DashboardMobileView{
+    /* border: 1px solid red; */
+    display: none;
+    position: relative;
+    z-index: 2;
+    top: 150px;
+    left: 70px;
+    word-spacing: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 2;
+    text-align: center;
+    width: 350px;
+}
+.SearchItem1{
+        cursor: pointer;
+        color: #b3b3b3;
+        position: relative;
+        top: 0;
+        font-size: 15px;
+        border: none;
+        background-color: transparent;
+}
+@media (max-width: 767px) {
+    *{
+        font-size: 13px;
+    }
+    .DashboardMobileView{
+        display: block;
+    }
+    .SingerList{
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        text-align: center;
+    }
+    .SingerElem{
+      background-color: transparent;
+      position: relative;
+      left: -80px;
+      width: 100%;
+    }
+    .AllSingers{
+        position: relative;
+        top: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    .Dashboard .Sec1{
+        width: 45%;
+        display: none;
+    }
+    .Dashboard .Sec2{
+        width: 45%;
+        display: none;
+    }
+    .HeadImg{
+        width: 99%;
+    }
+    .HeadImg1{
+        width: 99%;
+    }
+    .HeadImg2{
+        width: 99%;
+    }
+    .verified{
+        position: relative;
+        left: 0;
+        top: 248px;
+    }
+    .Navbar{
+        position: relative;
+        left: -75px;
+        width: 100%;
+    }
+    .SongController{
+        position: relative;
+        width: 95%;
+        left: 1%;
+    }
+    .SongController .slider{
+        position: relative;
+        left: 0;
+    }
+    .SongController .icons{
+        position: relative;
+        left: 80px;
+    }
+    .SongController .SongNameDisplay{
+        position: relative;
+        left: 80px;
+        top: 25px;
+    }
+    .Cookies{
+        position: absolute;
+        left: 0;
+    }
+    .MySongs{
+        position: fixed;
+        top: 200px;
+    }
+    .FooterElem a{
+        font-size: 10px;
+
+    }
+}

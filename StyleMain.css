@@ -1,0 +1,388 @@
+dashboard css
+/* body {
+    background-color: #292929 !important;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none !important;
+}
+.MainDiv{
+    width: 100%;
+    height: 100vh;;
+}
+.Dashboard {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    width: 300px;
+    height: auto;
+
+}
+.Dashboard a{
+    color: #b3b3b3;
+}
+.spotifyLogo{
+    width: 100px;
+    height: 45px;
+}
+.Dashboard .Section1{
+    background-color: #121212;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 200px;
+}
+.Dashboard .Section2{
+    background-color: #121212;
+    margin-top: 30px;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 100px;
+}
+.HomeContent1{
+    margin-left: -8px;
+    border: 1px solid red;
+    display: flex;
+    padding: 5px;
+}
+
+.WlcInfo{
+    color: white;
+    position: relative;
+    left: 200px;
+}
+.Logo {
+    width: 35px;
+}
+
+
+.Home a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 600;
+}
+
+.Home a:hover {
+    color: white;
+}
+
+#Active {
+    color: white;
+}
+
+
+.Privacy {
+    border: 1px solid red;
+    width: 280px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 12px;
+    color: #b3b3b3;
+    position: relative;
+    top: 10px;
+    left: 1px;
+}
+
+.Navbar {
+    display:flex;
+    position: absolute;
+    background-color: #121212;
+    width: 100%;
+    z-index: -1;
+    height: 80px;
+}
+
+.SignUp {
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    right: 10%;
+    margin: 25px;
+    color: #b3b3b3;
+    background-color: #121212;
+    border: none;
+}
+
+.Logout {
+    font-weight: 600;
+    position: absolute;
+    right: 1%;
+    color: black;
+    margin: 10px;
+    width: 8%;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.Navbar .SignUp:hover {
+    padding: .5px;
+}
+
+.Navbar .Logout:hover {
+    padding: .5px;
+}
+
+.Navbar a {
+    text-decoration: none;
+}
+
+    .Navbar a:hover {
+        color: white;
+    }
+
+.Logout:hover {
+    color: black !important;
+}
+
+.FooterDiv {
+    background: linear-gradient(135deg,purple,skyblue);
+    position: fixed;
+    width: 83.6%;
+    z-index: 2;
+}
+
+.FreeSignUp {
+    font-weight: 600;
+    position: absolute;
+    right: 2%;
+    margin: 5px;
+    width: 8%;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+    .FreeSignUp a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .FreeSignUp a:hover {
+            color: black;
+            padding: 5px;
+        }
+
+.FooterText {
+    margin: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+    .FooterText a {
+        text-decoration: none;
+        color: white;
+    }
+
+        .FooterText a:hover {
+            color: white;
+        }
+.RightText {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+    .RightText a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .RightText a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+.LeftText {
+    position: absolute;
+    top: 14%;
+    right: 2%;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+    .LeftText a {
+        color: #b3b3b3;
+        text-decoration: none;
+    }
+
+        .LeftText a:hover {
+            color: #b3b3b3;
+            text-decoration: underline;
+        }
+
+ .SongController {
+    position: absolute;
+    height: 100px;
+    background-color: #121212;
+    bottom: 8%;
+    left: 17.5%;
+    width: 82.7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+/* .PlayIcons {
+    margin-top: 10px;
+}
+
+    .PlayIcons svg {
+        cursor: pointer;
+    } */
+
+.SongItem {
+    position: relative;
+    top:60px;
+    right:57.5%;
+    height: 50px;
+    display: flex;
+    background-color: transparent;
+    width: 30%;
+    color: white;
+    margin: 12px 0;
+    justify-content: space-around;
+}
+
+#myProgressBar {
+    width: 80vw;
+    margin-block: 10px;
+} 
+
+.Songs {
+    background-color: transparent;
+    position: relative;
+    top: 120px;
+    left: 0%;
+    width: 300px;
+    padding: 10px;
+    height: 400px;
+    float:left;
+    display: flex;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+.CoverImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.CoverSinger {
+    font-size: 2vw;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+}
+
+.Info {
+    width: 300px;
+    height: 430px;
+    margin-left: 30px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+    /*.Info::after {
+        clear: both;
+    }*/
+
+.Verified {
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.hFEdcY {
+    fill: #0c67d3;
+}
+.Arrow{
+    position: relative;
+    top: 25px;
+    left: 270px;
+    font-size: 20px;
+}
+.Arrow .arwbtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+
+}
+.MainContent{
+    width: 83.6%;
+    height: 649px;
+    background-color: black ;
+    position: relative;
+    top: 80px;
+    left: 252px;
+}
+/* Large screen (desktop) */
+@media (min-width: 1200px) {
+    .FreeSignUp {
+        width: 10%;
+    }
+    .SignUp {
+        right: 15%;
+        
+    }
+    
+    .Logout {
+        right: 5%;
+    }
+  }
+  
+  /* Medium screen (tablet) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    /* styles for medium screen */
+    .FreeSignUp {
+        right: 6%;
+        width: 15%;
+    }
+    .SignUp {
+        right: 15%;
+        
+    }
+    .Logout {
+        right: 5%;
+        width: 10%;
+    }
+  }
+  
+  /* Small screen (mobile) */
+  @media (max-width: 767px) {
+    .FreeSignUp {
+       display: none;
+    }
+    .SignUp {
+       display: none;
+        
+    }
+    .Logout {
+        display: none;
+    }
+    .Songs {
+        display: block;
+    }
+
+    
+  }
